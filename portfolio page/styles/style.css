@@ -1,0 +1,54 @@
+:root {
+    --text-color: #fff;
+    --background-color: #7b7b7b;
+    --accent-color: rgb(16, 182, 119);
+    --hover-text-color: #b4b4b4;
+    --hover-button-color: #00c87f;
+}
+
+.header {
+    background-color: var(--background-color);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 30px 15px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.menu-list__link:hover {
+    color: var(--hover-text-color)
+}
+
+.button {
+    padding: 15px 10px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: var(--hover-button-color);
+    transform: scale(1.05);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000000;
+        --accent-color: rgb(61, 9, 191);
+        --hover-button-color: #7869ff;
+    }
+}
